@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
-    <pages>
-        <page name='实现自定义的动态数组'/>
-        <page name='Leetcode-1137-第N个泰波那契数'/>
-    </pages>
-</playground>

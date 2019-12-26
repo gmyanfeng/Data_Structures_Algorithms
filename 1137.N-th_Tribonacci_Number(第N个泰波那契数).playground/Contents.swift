@@ -22,12 +22,11 @@
  0 <= n <= 37
  答案保证是一个 32 位整数，即 answer <= 2^31 - 1。
 
- [力扣（LeetCode）](https://leetcode-cn.com/problems/n-th-tribonacci-number)
+ 力扣（LeetCode)
+ https://leetcode-cn.com/problems/n-th-tribonacci-number
  */
 
-//solution 1
-
-import Foundation
+import UIKit
 
 
 //垃圾：递归算法
@@ -88,3 +87,4 @@ func tribonacci3(_ n: Int) -> Int{
 }
 
 print(tribonacci3(25))
+
