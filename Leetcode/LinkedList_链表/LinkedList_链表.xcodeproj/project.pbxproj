@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F6A51E247773F80058B004 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6A51D247773F80058B004 /* Node.swift */; };
+		18F6A520247778410058B004 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6A51F247778410058B004 /* Helpers.swift */; };
+		18F6A52224777A380058B004 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6A52124777A380058B004 /* LinkedList.swift */; };
 		75DE515C246DADE200761A24 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE515B246DADE200761A24 /* main.swift */; };
 		75DE5163246DADF200761A24 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE5162246DADF200761A24 /* ListNode.swift */; };
 		75DE5165246DAE5E00761A24 /* 24_ReverseList_反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE5164246DAE5E00761A24 /* 24_ReverseList_反转链表.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18F6A51D247773F80058B004 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		18F6A51F247778410058B004 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		18F6A52124777A380058B004 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		75DE5158246DADE100761A24 /* LinkedList_链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LinkedList_链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DE515B246DADE200761A24 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		75DE5162246DADF200761A24 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 				75DE515B246DADE200761A24 /* main.swift */,
 				75DE5164246DAE5E00761A24 /* 24_ReverseList_反转链表.swift */,
 				75DE5162246DADF200761A24 /* ListNode.swift */,
+				18F6A52124777A380058B004 /* LinkedList.swift */,
+				18F6A51D247773F80058B004 /* Node.swift */,
+				18F6A51F247778410058B004 /* Helpers.swift */,
 			);
 			path = "LinkedList_链表";
 			sourceTree = "<group>";
@@ -126,9 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F6A52224777A380058B004 /* LinkedList.swift in Sources */,
 				75DE515C246DADE200761A24 /* main.swift in Sources */,
 				75DE5165246DAE5E00761A24 /* 24_ReverseList_反转链表.swift in Sources */,
 				75DE5163246DADF200761A24 /* ListNode.swift in Sources */,
+				18F6A520247778410058B004 /* Helpers.swift in Sources */,
+				18F6A51E247773F80058B004 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
