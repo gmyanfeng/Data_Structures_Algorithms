@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184435C12484C9AE00D95AA3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184435C02484C9AE00D95AA3 /* Helpers.swift */; };
-		18F6A51E247773F80058B004 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6A51D247773F80058B004 /* Node.swift */; };
-		18F6A52224777A380058B004 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6A52124777A380058B004 /* LinkedList.swift */; };
-		75DE515C246DADE200761A24 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE515B246DADE200761A24 /* main.swift */; };
-		75DE5163246DADF200761A24 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE5162246DADF200761A24 /* ListNode.swift */; };
-		75DE5165246DAE5E00761A24 /* 24_ReverseList_反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE5164246DAE5E00761A24 /* 24_ReverseList_反转链表.swift */; };
+		184435B22484B21700D95AA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184435B12484B21700D95AA3 /* main.swift */; };
+		184435BF2484C80500D95AA3 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184435BE2484C80500D95AA3 /* TreeNode.swift */; };
+		184435C32484C9BE00D95AA3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184435C22484C9BE00D95AA3 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		75DE5156246DADE100761A24 /* CopyFiles */ = {
+		184435AC2484B21700D95AA3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,17 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		184435C02484C9AE00D95AA3 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = "../../Tree_树/Tree_树/Helpers.swift"; sourceTree = "<group>"; };
-		18F6A51D247773F80058B004 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		18F6A52124777A380058B004 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
-		75DE5158246DADE100761A24 /* LinkedList_链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LinkedList_链表"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75DE515B246DADE200761A24 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		75DE5162246DADF200761A24 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
-		75DE5164246DAE5E00761A24 /* 24_ReverseList_反转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24_ReverseList_反转链表.swift"; sourceTree = "<group>"; };
+		184435AE2484B21700D95AA3 /* Tree_树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tree_树"; sourceTree = BUILT_PRODUCTS_DIR; };
+		184435B12484B21700D95AA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		184435BE2484C80500D95AA3 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		184435C22484C9BE00D95AA3 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75DE5155246DADE100761A24 /* Frameworks */ = {
+		184435AB2484B21700D95AA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,71 +42,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		75DE514F246DADE100761A24 = {
+		184435A52484B21700D95AA3 = {
 			isa = PBXGroup;
 			children = (
-				75DE515A246DADE200761A24 /* LinkedList_链表 */,
-				75DE5159246DADE100761A24 /* Products */,
+				184435B02484B21700D95AA3 /* Tree_树 */,
+				184435AF2484B21700D95AA3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		75DE5159246DADE100761A24 /* Products */ = {
+		184435AF2484B21700D95AA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75DE5158246DADE100761A24 /* LinkedList_链表 */,
+				184435AE2484B21700D95AA3 /* Tree_树 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75DE515A246DADE200761A24 /* LinkedList_链表 */ = {
+		184435B02484B21700D95AA3 /* Tree_树 */ = {
 			isa = PBXGroup;
 			children = (
-				75DE515B246DADE200761A24 /* main.swift */,
-				75DE5164246DAE5E00761A24 /* 24_ReverseList_反转链表.swift */,
-				75DE5162246DADF200761A24 /* ListNode.swift */,
-				18F6A52124777A380058B004 /* LinkedList.swift */,
-				18F6A51D247773F80058B004 /* Node.swift */,
-				184435C02484C9AE00D95AA3 /* Helpers.swift */,
+				184435B12484B21700D95AA3 /* main.swift */,
+				184435BE2484C80500D95AA3 /* TreeNode.swift */,
+				184435C22484C9BE00D95AA3 /* Helpers.swift */,
 			);
-			path = "LinkedList_链表";
+			path = "Tree_树";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75DE5157246DADE100761A24 /* LinkedList_链表 */ = {
+		184435AD2484B21700D95AA3 /* Tree_树 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75DE515F246DADE200761A24 /* Build configuration list for PBXNativeTarget "LinkedList_链表" */;
+			buildConfigurationList = 184435B52484B21700D95AA3 /* Build configuration list for PBXNativeTarget "Tree_树" */;
 			buildPhases = (
-				75DE5154246DADE100761A24 /* Sources */,
-				75DE5155246DADE100761A24 /* Frameworks */,
-				75DE5156246DADE100761A24 /* CopyFiles */,
+				184435AA2484B21700D95AA3 /* Sources */,
+				184435AB2484B21700D95AA3 /* Frameworks */,
+				184435AC2484B21700D95AA3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LinkedList_链表";
-			productName = "LinkedList_链表";
-			productReference = 75DE5158246DADE100761A24 /* LinkedList_链表 */;
+			name = "Tree_树";
+			productName = "Tree_树";
+			productReference = 184435AE2484B21700D95AA3 /* Tree_树 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		75DE5150246DADE100761A24 /* Project object */ = {
+		184435A62484B21700D95AA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = com.bytepanda;
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = yf;
 				TargetAttributes = {
-					75DE5157246DADE100761A24 = {
-						CreatedOnToolsVersion = 11.4;
+					184435AD2484B21700D95AA3 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 75DE5153246DADE100761A24 /* Build configuration list for PBXProject "LinkedList_链表" */;
+			buildConfigurationList = 184435A92484B21700D95AA3 /* Build configuration list for PBXProject "Tree_树" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,34 +111,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 75DE514F246DADE100761A24;
-			productRefGroup = 75DE5159246DADE100761A24 /* Products */;
+			mainGroup = 184435A52484B21700D95AA3;
+			productRefGroup = 184435AF2484B21700D95AA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75DE5157246DADE100761A24 /* LinkedList_链表 */,
+				184435AD2484B21700D95AA3 /* Tree_树 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75DE5154246DADE100761A24 /* Sources */ = {
+		184435AA2484B21700D95AA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F6A52224777A380058B004 /* LinkedList.swift in Sources */,
-				184435C12484C9AE00D95AA3 /* Helpers.swift in Sources */,
-				75DE515C246DADE200761A24 /* main.swift in Sources */,
-				75DE5165246DAE5E00761A24 /* 24_ReverseList_反转链表.swift in Sources */,
-				75DE5163246DADF200761A24 /* ListNode.swift in Sources */,
-				18F6A51E247773F80058B004 /* Node.swift in Sources */,
+				184435B22484B21700D95AA3 /* main.swift in Sources */,
+				184435C32484C9BE00D95AA3 /* Helpers.swift in Sources */,
+				184435BF2484C80500D95AA3 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		75DE515D246DADE200761A24 /* Debug */ = {
+		184435B32484B21700D95AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		75DE515E246DADE200761A24 /* Release */ = {
+		184435B42484B21700D95AA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +248,7 @@
 			};
 			name = Release;
 		};
-		75DE5160246DADE200761A24 /* Debug */ = {
+		184435B62484B21700D95AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -269,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		75DE5161246DADE200761A24 /* Release */ = {
+		184435B72484B21700D95AA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -281,25 +269,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75DE5153246DADE100761A24 /* Build configuration list for PBXProject "LinkedList_链表" */ = {
+		184435A92484B21700D95AA3 /* Build configuration list for PBXProject "Tree_树" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75DE515D246DADE200761A24 /* Debug */,
-				75DE515E246DADE200761A24 /* Release */,
+				184435B32484B21700D95AA3 /* Debug */,
+				184435B42484B21700D95AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75DE515F246DADE200761A24 /* Build configuration list for PBXNativeTarget "LinkedList_链表" */ = {
+		184435B52484B21700D95AA3 /* Build configuration list for PBXNativeTarget "Tree_树" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75DE5160246DADE200761A24 /* Debug */,
-				75DE5161246DADE200761A24 /* Release */,
+				184435B62484B21700D95AA3 /* Debug */,
+				184435B72484B21700D95AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 75DE5150246DADE100761A24 /* Project object */;
+	rootObject = 184435A62484B21700D95AA3 /* Project object */;
 }

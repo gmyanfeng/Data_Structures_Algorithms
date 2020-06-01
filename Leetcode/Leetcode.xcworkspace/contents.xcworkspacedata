@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Queue_&#x961f;&#x5217;/Queue_&#x961f;&#x5217;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkedList_&#x94fe;&#x8868;/../Tree_&#x6811;/Tree_&#x6811;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LinkedList_&#x94fe;&#x8868;/LinkedList_&#x94fe;&#x8868;.xcodeproj">
    </FileRef>
 </Workspace>
