@@ -41,3 +41,10 @@ extension Stack: CustomStringConvertible {
         peek() == nil
     }
 }
+
+extension Stack: ExpressibleByArrayLiteral {
+    
+    public init(arrayLiteral elements: Element...) {
+        storage = elements
+    }
+}

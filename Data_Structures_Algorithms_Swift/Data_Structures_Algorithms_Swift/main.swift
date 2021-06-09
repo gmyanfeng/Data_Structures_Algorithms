@@ -26,3 +26,16 @@ example(of: "initialing a stack from an array") {
     print(stack)
     stack.pop()
 }
+
+example(of: "initialing a stack from an array literal") {
+    var stack: Stack = [1.0,2.0,3.0,4.0]
+    print(stack)
+    stack.pop()
+}
+
+
+//Challenges 1
+example(of: "Reverse an array") {
+    let array = [1,2,3,4]
+    printInReverse(array)
+}

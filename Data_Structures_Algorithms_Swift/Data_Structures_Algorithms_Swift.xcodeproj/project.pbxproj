@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1CD36025C1B93D00B979DA /* Reverse-an-Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CD35F25C1B93D00B979DA /* Reverse-an-Array.swift */; };
 		1FB585A725C08A9000FB749D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB585A625C08A9000FB749D /* main.swift */; };
 		1FB585AF25C08AC600FB749D /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB585AE25C08AC600FB749D /* Stack.swift */; };
 		1FB585B225C08DCB00FB749D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB585B125C08DCB00FB749D /* Helper.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F1CD35F25C1B93D00B979DA /* Reverse-an-Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reverse-an-Array.swift"; sourceTree = "<group>"; };
 		1FB585A325C08A9000FB749D /* Data_Structures_Algorithms_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structures_Algorithms_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB585A625C08A9000FB749D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1FB585AE25C08AC600FB749D /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1CD35E25C1B91000B979DA /* Chapter5-Stack-Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CD35F25C1B93D00B979DA /* Reverse-an-Array.swift */,
+			);
+			path = "Chapter5-Stack-Challenges";
+			sourceTree = "<group>";
+		};
 		1FB5859A25C08A9000FB749D = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		1FB585A525C08A9000FB749D /* Data_Structures_Algorithms_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1F1CD35E25C1B91000B979DA /* Chapter5-Stack-Challenges */,
 				1FB585A625C08A9000FB749D /* main.swift */,
 				1FB585AE25C08AC600FB749D /* Stack.swift */,
 				1FB585B125C08DCB00FB749D /* Helper.swift */,
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB585AF25C08AC600FB749D /* Stack.swift in Sources */,
+				1F1CD36025C1B93D00B979DA /* Reverse-an-Array.swift in Sources */,
 				1FB585A725C08A9000FB749D /* main.swift in Sources */,
 				1FB585B225C08DCB00FB749D /* Helper.swift in Sources */,
 			);
