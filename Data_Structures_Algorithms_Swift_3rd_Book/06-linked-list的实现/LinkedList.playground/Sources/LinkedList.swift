@@ -11,11 +11,14 @@ public struct LinkedList<Value> {
     
     public init() {}
     
+    //如果头结点为空的话，链表也是空的
     public var isEmpty:Bool {
         head == nil
     }
     
     public mutating func push(_ value: Value) {
+        copyNodes()
+        
         //根据新的值 赋值给头节点， 原来的头节点称为下一个节点
         head = Node(value, next: head)
         
@@ -26,6 +29,8 @@ public struct LinkedList<Value> {
     }
     
     public mutating func append(_ value: Value) {
+        copyNodes()
+        
         //判断是否是空链表，如果是的话直接插到表头
         if isEmpty == true {
             push(value)
@@ -39,8 +44,11 @@ public struct LinkedList<Value> {
         tail = tail!.next
     }
     
+    //在某个节点后面插入新的节点
     @discardableResult
     public mutating func insert(_ value: Value, after node: Node<Value>) -> Node<Value> {
+        copyNodes()
+        
         guard tail !== node else {
             //如果 node 是尾节点的话
             append(value)
@@ -51,6 +59,7 @@ public struct LinkedList<Value> {
         return node.next!
     }
     
+    //获取index的节点
     public func node(at index: Int) -> Node<Value>?{
         var currentNode = head
         var currentIndex = 0
@@ -63,7 +72,10 @@ public struct LinkedList<Value> {
         return currentNode
     }
     
+    //移除头结点
     public mutating func pop() -> Node<Value>? {
+        copyNodes()
+        
         defer {
             head = head?.next
             if isEmpty{
@@ -74,8 +86,13 @@ public struct LinkedList<Value> {
         return head
     }
     
+    //移除尾节点
     public mutating func removeLast() -> Node<Value>? {
+        copyNodes()
+        
+        //头结点为空说明链表为空
         guard let head = head else { return nil }
+        
         
         guard head.next != nil else {
             return pop()
@@ -97,6 +114,10 @@ public struct LinkedList<Value> {
     
     @discardableResult
     public mutating func remove(after node: Node<Value>) -> Node<Value>? {
+        guard let node = copyNodes(returningCopyOf: node) else {
+            return nil
+        }
+        
         defer {
             if node.next === tail {
                 tail = node
@@ -105,6 +126,49 @@ public struct LinkedList<Value> {
         }
         
         return node.next
+    }
+    
+    private mutating func copyNodes(){
+        guard !isKnownUniquelyReferenced(&head) else {
+            return
+        }
+        guard var oldNode = head else {
+            return
+        }
+        head = Node(oldNode.value)
+        var newNode = head
+        
+        while let nextOldNode = oldNode.next {
+            newNode!.next = Node(nextOldNode.value)
+            newNode = newNode!.next
+            oldNode = nextOldNode
+        }
+        
+        tail = newNode
+    }
+    
+    //copy 链，为 remove(after node 设计, 返回copy前原来的链表头结点
+    private mutating func copyNodes(returningCopyOf node: Node<Value>?) -> Node<Value>?{
+        guard !isKnownUniquelyReferenced(&head) else {
+            return nil
+        }
+        guard var oldNode = head else {
+            return nil
+        }
+        
+        head = Node(oldNode.value)
+        var newNode = head
+        var nodeCopy: Node<Value>?
+        while let nextOldNode = oldNode.next {
+            if oldNode === node {
+                nodeCopy = newNode
+            }
+            newNode!.next = Node(nextOldNode.value)
+            newNode = newNode?.next
+            oldNode = nextOldNode
+        }
+        
+        return nodeCopy
     }
 }
 
