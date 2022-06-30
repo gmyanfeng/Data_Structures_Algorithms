@@ -11,20 +11,21 @@ func printInReverse<T>(_ list: LinkedList<T>) {
     printInReverse(list.head)
 }
 
-private func printInReverse<T>(_ node: Node<T>?){
-    guard let nextNode = node else { return }
-    printInReverse(nextNode.next)
-    print(nextNode.value)
+func printInReverse<T>(_ node: Node<T>?) {
+    guard let node = node else {
+        return
+    }
+    printInReverse(node.next)
+    print(node.value)
 }
 
-example(of: "Print list in reverse") {
+example(of: "printing in reverse") {
     var list = LinkedList<Int>()
     list.append(1)
     list.append(2)
     list.append(3)
-    print("origin list: \(list)")
-    print("reverse list: ")
+    print("Original list: \(list)")
+    print("Printing in reverse: ")
     printInReverse(list)
 }
-
 //: [Next Challenge](@next)
